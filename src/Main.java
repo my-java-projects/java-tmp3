@@ -32,6 +32,7 @@ public class Main {
         // Get the number of students from the user
         System.out.print("Enter the number of students: ");
         int numberOfStudents = scanner.nextInt();
+        scanner.close();
 
         // Create an ArrayList of students
         ArrayList<Student> students = new ArrayList<>();
@@ -69,6 +70,6 @@ public class Main {
             System.out.println("National Code: " + key + ", Details: " + studentMap.get(key));
         }
 
-        scanner.close();
+
     }
 }
